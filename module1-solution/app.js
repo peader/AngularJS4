@@ -10,7 +10,8 @@ function LunchCheckController($scope){
   $scope.lunchCheckOutput;
   $scope.checkIfTooMuch = function(){
     var array = $scope.dishes.split(',');
-    array = array.filter(function(n){ return n != "" });
+    array = array.filter(function(n){ return n != ""  });
+    array = array.filter(function(n){ return n.trim() });
     var count = array.length;
     console.log(count);
     if(count <= 3 && count >0){ $scope.lunchCheckOutput = "Enjoy!";}
