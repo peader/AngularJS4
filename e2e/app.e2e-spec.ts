@@ -1,10 +1,10 @@
-import { ExampleProjectPage } from './app.po';
+import { ExampleprojectPage } from './app.po';
 
-describe('example-project App', () => {
-  let page: ExampleProjectPage;
+describe('exampleproject App', () => {
+  let page: ExampleprojectPage;
 
   beforeEach(() => {
-    page = new ExampleProjectPage();
+    page = new ExampleprojectPage();
   });
 
   it('should display welcome message', () => {
